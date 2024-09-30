@@ -53,8 +53,8 @@ export default function WeatherWidget() {
         unit: "C",
       };
       setWeather(weatherData);
-    } catch (Erorr) {
-      console.error("Error fetching weather data");
+    } catch (error) {
+      console.error("Error fetching weather data",error);
       setError("City not found. please try again.");
       setWeather(null);
     } finally {
